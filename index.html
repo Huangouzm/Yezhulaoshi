@@ -4,159 +4,86 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>黄政铭 · Zhengming Huang</title>
-    <meta
-      name="description"
-      content="黄政铭（Zhengming Huang）的个人主页。作品：蒯曼 Kuai Man 专题站 kuaiman0207.top。"
-    />
-    <meta name="theme-color" content="#2a1a2e" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff9d4d'/%3E%3Cstop offset='1' stop-color='%23ff5f7e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='26' fill='url(%23g)'/%3E%3Ctext x='50' y='70' font-size='54' font-weight='700' font-family='Songti SC,serif' text-anchor='middle' fill='%23fff'%3E%E9%93%AD%3C/text%3E%3C/svg%3E"
-    />
+    <meta name="description" content="黄政铭（Zhengming Huang）的个人主页。写点网页和小工具，为喜欢的事物做点东西。作品：蒯曼 Kuai Man 专题站。" />
+    <meta name="theme-color" content="#20283a" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%2320283a'/%3E%3Ctext x='50' y='69' font-size='55' font-family='serif' text-anchor='middle' fill='%23f1d1af'%3E%E9%93%AD%3C/text%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://s4.zstatic.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/lxgwwenkaiscreenr.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/lxgwwenkaiscreenr.css" />
     <link rel="preload" as="image" href="assets/bg.jpg" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body>
-    <div class="bg" aria-hidden="true"></div>
+  <body id="top">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div class="background" aria-hidden="true"></div>
 
-    <aside class="clock" aria-hidden="true">
-      <span class="clock-date" id="clock-date">2026年11月02日 星期一</span>
-      <span class="clock-time" id="clock-time">19:38</span>
-    </aside>
+    <header class="site-header frame">
+      <a class="brand" href="#top" aria-label="黄政铭的主页">
+        <span class="brand-mark" aria-hidden="true">铭</span>
+        <span class="brand-text">黄政铭<span>PERSONAL SPACE</span></span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a class="nav-home" href="#top" aria-current="page">主页</a>
+        <a href="#works">作品</a>
+        <a href="mailto:zhengming.huang@seu.edu.cn">联系 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
 
-    <main class="shell">
-      <section class="hero">
-        <div class="brand">
-          <span class="sticker" aria-hidden="true">铭</span>
-          <h1 class="wordmark">Zhengming Huang</h1>
+    <main class="main frame" id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow hero-eyebrow"><span class="little-star" aria-hidden="true">✳</span> A LITTLE CORNER OF THE INTERNET</p>
+        <h1 id="hero-title" aria-label="黄政铭 · Zhengming Huang">
+          <span class="name-layer name-en" lang="en" aria-hidden="true">Zhengming<br /><span class="name-surname">Huang<span class="name-period">.</span></span></span>
+          <span class="name-layer name-zh" aria-hidden="true"><span class="name-accent">黄</span>政铭</span>
+        </h1>
+        <p class="intro">你好，我是黄政铭<span class="intro-dash" aria-hidden="true">—</span><span class="school">东南大学</span></p>
+        <p class="bio">平时写点网页和小工具，<br />也为自己喜欢的事物做点东西。<br /><span>这里是它们待的地方，欢迎你来。</span></p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#works">逛逛我的作品 <span aria-hidden="true">↗</span></a>
+          <a class="github-link" href="https://github.com/Huangouzm" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82c.85 0 1.71.11 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" /></svg>
+            GitHub <span class="link-arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
-        <p class="tagline">黄政铭 · 东南大学</p>
-
-        <figure class="quote">
-          <blockquote>
-            <p class="quote-title">Hello World !</p>
-            <p class="quote-text">
-              平时写点网页和小工具，也为自己喜欢的事物做点东西。这里是它们待的地方。
-            </p>
-          </blockquote>
-        </figure>
-
-        <nav class="social" aria-label="联系方式">
-          <a class="round" href="mailto:zhengming.huang@seu.edu.cn" aria-label="邮件">
-            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217l-8 4.8-8-4.8V4Z" />
-              <path d="M0 6.383V12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6.383l-8 4.8-8-4.8Z" />
-            </svg>
-          </a>
-          <a
-            class="round"
-            href="https://github.com/Huangouzm"
-            target="_blank"
-            rel="noopener"
-            aria-label="GitHub"
-          >
-            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
-              />
-            </svg>
-          </a>
-          <a
-            class="round"
-            href="https://kuaiman0207.top"
-            target="_blank"
-            rel="noopener"
-            aria-label="蒯曼专题站"
-          >
-            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-              <circle cx="8" cy="8" r="6.6" fill="none" stroke="currentColor" stroke-width="1.5" />
-              <path
-                d="M1.6 8h12.8M8 1.4c1.9 1.9 2.9 4.1 2.9 6.6S9.9 13 8 14.6C6.1 13 5.1 10.7 5.1 8S6.1 3.3 8 1.4Z"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.3"
-              />
-            </svg>
-          </a>
-        </nav>
+        <div class="contact-line" id="contact">
+          <a href="mailto:zhengming.huang@seu.edu.cn">zhengming.huang@seu.edu.cn</a>
+          <button class="copy-button" type="button" aria-label="复制邮箱地址" title="复制邮箱地址" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2" /><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" /></svg>
+          </button>
+          <span class="copy-status" role="status" aria-live="polite"></span>
+        </div>
       </section>
 
-      <section class="works" aria-labelledby="works-title">
-        <h2 id="works-title" class="works-title">
-          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-            <path
-              d="M8 1.2l1.6 4.2 4.2 1.6-4.2 1.6L8 12.8 6.4 8.6 2.2 7l4.2-1.6L8 1.2Z"
-              fill="currentColor"
-            />
-          </svg>
-          作品
-        </h2>
-
-        <a class="work" href="https://kuaiman0207.top" target="_blank" rel="noopener">
-          <img
-            class="work-thumb"
-            src="assets/kuaiman-cover.jpg"
-            alt="蒯曼 Kuai Man 专题站首页"
-            width="900"
-            height="900"
-            loading="lazy"
-          />
-          <div class="work-body">
-            <h3>蒯曼 Kuai Man 专题站</h3>
-            <p>赛事回顾、世界排名、荣誉成就、采访访谈与球迷作品，关于中国乒乓球运动员蒯曼的一切。</p>
-            <span class="work-domain">kuaiman0207.top <span class="arrow">↗</span></span>
+      <section class="works" id="works" aria-labelledby="works-title">
+        <div class="section-heading">
+          <h2 id="works-title">一些作品<span>SELECTED WORK</span></h2>
+          <span class="section-count" aria-label="1 个作品">01</span>
+        </div>
+        <a class="project" href="https://kuaiman0207.top" target="_blank" rel="noopener noreferrer" aria-labelledby="project-title" aria-describedby="project-description">
+          <div class="project-art">
+            <div class="art-caption" aria-hidden="true"><span>A PROJECT FOR PASSION</span><span>↗</span></div>
+            <span class="art-ring" aria-hidden="true"></span>
+            <img src="assets/kuaiman-cover.jpg" alt="蒯曼签名与中国乒乓球运动员介绍" width="900" height="900" decoding="async" />
+            <div class="art-bottom" aria-hidden="true"><span>KUAI MAN</span><span>乒乓 · 热爱 · 记录</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-category"><span class="status-dot" aria-hidden="true"></span> 个人项目 / 专题网站</div>
+            <h3 id="project-title">蒯曼 <span>Kuai Man</span> 专题站</h3>
+            <p id="project-description">记录赛场上的每一次闪光。赛事回顾、世界排名、荣誉成就，还有采访访谈与球迷作品。</p>
+            <div class="project-tags" aria-label="项目内容"><span>赛事记录</span><span>人物专题</span><span>球迷作品</span></div>
+            <div class="project-footer"><span>kuaiman0207.top</span><span class="project-visit">去看看 <span class="visit-arrow" aria-hidden="true">↗</span></span></div>
           </div>
         </a>
-
-        <p class="more">更多作品还在整理中 …</p>
+        <p class="work-note"><span aria-hidden="true">＋</span> 更多小小的想法，正在慢慢发生<span class="note-dots" aria-hidden="true">…</span></p>
       </section>
     </main>
 
-    <footer>
-      <span>© <span id="year">2026</span> 黄政铭</span>
-      <span class="dot">·</span>
-      <a href="mailto:zhengming.huang@seu.edu.cn">写封邮件</a>
+    <footer class="site-footer frame">
+      <div class="footer-message"><svg viewBox="0 0 32 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 17h28M6 21h20M9 17a7 7 0 0 1 14 0M16 2v4M4 7l3 3M28 7l-3 3" /></svg><span>保持好奇，慢慢生长。</span></div>
+      <div class="clock" aria-label="本地时间"><span class="status-dot" aria-hidden="true"></span><time id="clock-time">--:--</time><span id="clock-date"></span><span class="clock-label">LOCAL TIME</span></div>
+      <div class="copyright">© <span id="year">2026</span> 黄政铭<span class="footer-dot" aria-hidden="true">·</span><a href="#top" aria-label="返回顶部">回到顶部 ↑</a></div>
     </footer>
-
-    <script>
-      (function () {
-        var year = document.getElementById("year");
-        year.textContent = new Date().getFullYear();
-
-        var weekdays = ["日", "一", "二", "三", "四", "五", "六"];
-        var dateEl = document.getElementById("clock-date");
-        var timeEl = document.getElementById("clock-time");
-
-        function pad(n) {
-          return n < 10 ? "0" + n : "" + n;
-        }
-
-        function tick() {
-          var now = new Date();
-          dateEl.textContent =
-            now.getFullYear() +
-            "年" +
-            pad(now.getMonth() + 1) +
-            "月" +
-            pad(now.getDate()) +
-            "日 星期" +
-            weekdays[now.getDay()];
-          timeEl.textContent = pad(now.getHours()) + ":" + pad(now.getMinutes());
-        }
-
-        tick();
-        setInterval(tick, 1000 * 20);
-      })();
-    </script>
   </body>
 </html>
